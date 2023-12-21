@@ -35,3 +35,7 @@ def contact(request):
         'name': 'contact'
     }
     return render(request, 'contact.html', context)
+
+# 测试静态文件路径
+def test_static(request):
+    return render(request, 'test_static.html')
